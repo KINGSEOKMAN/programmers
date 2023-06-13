@@ -1,0 +1,9 @@
+function solution(number) {
+    let sum=0;
+    for(i=0; i<number.length; i++){
+        sum+=parseInt(number[i])
+    }
+    return sum%9
+
+   
+}
