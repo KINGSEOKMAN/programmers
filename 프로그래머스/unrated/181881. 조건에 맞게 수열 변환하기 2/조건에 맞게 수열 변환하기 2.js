@@ -3,7 +3,7 @@ function solution(arr) {
   let arrCopy = [...arr]; 
 
   while (true) {
-    count++;
+    
     
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] >= 50 && arr[i] % 2 === 0) {
@@ -12,13 +12,15 @@ function solution(arr) {
         arr[i] = arr[i] * 2 + 1;
       }
     }
+      
     if(!arr.every((value, index) => value === arrCopy[index])){
             arrCopy=[...arr];
         }else if(arr.every((value, index) => value === arrCopy[index])){
             break;
         }
+      count++;
     }
-    return count-1;
+    return count;
 }
 
 
