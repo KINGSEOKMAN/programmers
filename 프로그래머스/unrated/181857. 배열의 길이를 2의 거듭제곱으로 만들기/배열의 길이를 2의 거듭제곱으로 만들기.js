@@ -1,6 +1,6 @@
 function solution(arr) {
-    const length=arr.length;
-    const square=Math.pow(2,Math.ceil(Math.log2(length)))
+    const length=arr.length; //배열길이
+    const square=Math.pow(2,Math.ceil(Math.log2(length)))//다음제곱
      if ((length & (length - 1)) === 0) {
           return arr;
      }
