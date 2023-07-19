@@ -1,11 +1,9 @@
+
 function solution(myString) {
-    let result = '';
-    for (let i = 0; i < myString.length; i++) {
-        if (myString[i] < 'l') {
-            result += 'l';
-        } else {
-            result += myString[i];
+    for(let i = 0; i < myString.length; i++) {
+        if(myString[i] < "l") {
+            myString = myString.replace(myString[i], "l");
         }
     }
-    return result;
+    return myString;
 }
